@@ -1,0 +1,33 @@
+{
+  "name": "mern-server",
+  "description": "",
+  "scripts": {
+    "dev": "babel-watch src/index.js",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "build": "rm -rf ./dist && cross-env NPM_CONFIG_PRODUCTION=false babel -d ./dist ./src -s"
+  },
+  "author": "Sravani",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.2",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.6",
+    "loglevel-colored-level-prefix": "^1.0.0",
+    "mongoose": "^6.6.2",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.8.0",
+    "nodemailer-smtp-transport": "^2.7.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+    "@babel/preset-env": "^7.19.3",
+    "babel-watch": "^7.7.0"
+  }
+}
